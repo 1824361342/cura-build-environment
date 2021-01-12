@@ -1,9 +1,9 @@
 #!/bin/bash
 
-echo "deb http://deb.debian.org/debian stretch-backports main" >> /etc/apt/sources.list
+echo "deb http://deb.debian.org/debian buster-backports main" >> /etc/apt/sources.list
 
 apt-get update
-apt-get -t stretch-backports install -y \
+apt-get -t buster-backports install -y \
   cmake
 apt-get install -y \
   curl wget make git patchelf
